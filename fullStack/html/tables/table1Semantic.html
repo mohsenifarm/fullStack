@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Semantic table</title>
+</head>
+
+<body>
+    <h1>Heaviest Birds Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Average mass [Kg(lb)]</th>
+                <th>Maximum mass [Kg(lb)]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostric</td>
+                <td>104(230)</td>
+                <td>156.8(346)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>95(210)</td>
+                <td>130(287)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5(29.8)</td>
+                <td>39(86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- ---------------------------------------- -->
+    <h2>V2 Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostric</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>95</td>
+                <td>210</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- ------------------------------------------ -->
+     <!-- exersize -->
+      <h3>Course Exercise</h3>
+      <table>
+        <thead>
+            <tr>
+                <th>Subscription</th>
+                <th>Price</th>
+                <th>Support</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Free</td>
+                <td>Free</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Presonal</td>
+                <td>9.99$</td>
+                <td>Weekdays</td>
+            </tr>
+            <tr>
+                <td>Bussines</td>
+                <td>49.99</td>
+                <td>24/7</td>
+            </tr>
+        </tbody>
+      </table>
+    <a href="tables1.html">back</a>
+</body>
+<!-- thead and tbody and tfooter dont change the code lay out but makes the code more semantic  -->
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <!-- action attribute specify where the form datas should be send  -->
+    <!-- lable connect to input with for and id with the same value -->
+    <!-- when the lable and input connected together when click on lable text it automaticly swich in input  -->
+
+    <!-- name attribute  -->
+     <!-- give the username input name of username . click to submit. result : -->
+     <!-- http://localhost:52330/tacos?username=sad -->
+      <!-- ** name will match with the input value (name was user name and input value is whatever i type)=> username=sad -->
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a username:</label>
+            <input type="text" placeholder="Username" name="username" id="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="Password" name="password" id="password">
+        </p>
+        <p>
+            <label for="color">choose a color</label>
+            <input type="color" name="color" id="color">
+        </p>
+        <label for="number">Choose a number</label>
+        <input type="number" placeholder="enter a number" name="number" id="number">
+        <p>
+            <!-- we can nest the input iside the lable and we dont need connect the with for and id but its not very commen -->
+            <label>
+                Enter num :
+                <input type="text" name="" id="">
+            </label>
+        </p>
+        <!-- when i hit the button it it drives me to action of the form  -->
+         <!-- when i click it goes to : http://localhost:52330/tacos? -->
+
+        <button>Submit button</button>
+        <!-- or -->
+         <input type="submit" name="" id="">
+
+        <!-- if i give the type=button to button i doesnt send a request  -->
+         <button type="button">Doesn't send request</button>
+    </form>
+</body>
+
+</html>
+<!-- form element is the container of inputs, butoons, checkboxs, ... -->
+<!-- the form element also dicatates where the form datas shoulde be sends -->

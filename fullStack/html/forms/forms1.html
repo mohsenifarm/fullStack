@@ -14,9 +14,9 @@
     <!-- when the lable and input connected together when click on lable text it automaticly swich in input  -->
 
     <!-- name attribute  -->
-     <!-- give the username input name of username . click to submit. result : -->
-     <!-- http://localhost:52330/tacos?username=sad -->
-      <!-- ** name will match with the input value (name was user name and input value is whatever i type)=> username=sad -->
+    <!-- give the username input name of username . click to submit. result : -->
+    <!-- http://localhost:52330/tacos?username=sad -->
+    <!-- ** name will match with the input value (name was user name and input value is whatever i type)=> username=sad -->
     <form action="/tacos">
         <p>
             <label for="username">Enter a username:</label>
@@ -31,7 +31,7 @@
             <input type="color" name="color" id="color">
         </p>
         <label for="number">Choose a number</label>
-        <input type="number" placeholder="enter a number" name="number" id="number">
+        <input type="number" placeholder="enter a number" name="number" id="number" min="1" max="10">
         <p>
             <!-- we can nest the input iside the lable and we dont need connect the with for and id but its not very commen -->
             <label>
@@ -40,14 +40,77 @@
             </label>
         </p>
         <!-- when i hit the button it it drives me to action of the form  -->
-         <!-- when i click it goes to : http://localhost:52330/tacos? -->
+        <!-- when i click it goes to : http://localhost:52330/tacos? -->
 
         <button>Submit button</button>
         <!-- or -->
-         <input type="submit" name="" id="">
+        <input type="submit" name="" id="">
 
         <!-- if i give the type=button to button i doesnt send a request  -->
-         <button type="button">Doesn't send request</button>
+        <button type="button">Doesn't send request</button>
+    </form>
+    <hr>
+    <!-- hijacking -->
+    <h3>Hijacking Searchs</h3>
+    <h5>Reddit</h5>
+    <form action="https://www.reddit.com/search/">
+        <label for="search">Reddit Search </label>
+        <input type="text" name="q" id="search">
+        <button>Search in reddit</button>
+
+    </form>
+    <h5>Google</h5>
+    <hr>
+    <form action="https://www.google.com/search">
+        <label for="google">Google Search</label>
+        <input type="text" name="q" id="google">
+        <button>Submit</button>
+
+    </form>
+
+    <hr>
+    <h5>Youtube</h5>
+
+
+    <form action="https://www.youtube.com/results">
+        <label for="youtube">YOUTUBE</label>
+        <input type="text" name="search_query" id="youtube">
+        <button>Search from youtube</button>
+    </form>
+    <hr>
+    <h2>More input types</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to eveything</label>
+        <p>
+            <!-- if i give the same name to the group of radio buttons with diffrent values user can choose just one -->
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please Select A Meal Type?</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="vegetarian" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <!-- range input  -->
+            <label for="cheese">Please select the amount of cheese : </label>
+            <input type="range" name="cheese" id="cheese" min="1" max="10">
+        </p>
+
+        <!-- textaarea -->
+         <p>
+            <label for="request">Any special request?</label>
+            <textarea name="request" id="request" rows="10" cols="40" placeholder="Type something here..."></textarea>
+         </p>
+        <button>Submit</button>
     </form>
 </body>
 

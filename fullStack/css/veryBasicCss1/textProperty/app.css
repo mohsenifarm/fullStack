@@ -1,0 +1,31 @@
+/* text-align : sets the horizantal alignment  */
+/* font-weight controls the boldnes  */
+/* text-decoration : sets appearance of decorative line on text  */
+/* line-height : sets line of height box  */
+/* letter-spacenig : sets horizantal spacing behavior(space between charactor not words) */
+/* font-family : first, next choice, next choice */
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    /* text-decoration: underline;
+    text-decoration: underline dotted;
+    text-decoration: underline dotted red;
+    text-decoration: green wavy underline; */
+    /* text-decoration: line-through;  */
+    font-size: 50px;
+    font-family: verdana, sans-serif;
+
+    text-decoration: wavy underline overline #ff3028 1px;
+}
+p {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+}
+
+/* relatives : EM, REM, VH, VM, %, ... */
+/* absolute: PX, PT, CM, IN, MM  */

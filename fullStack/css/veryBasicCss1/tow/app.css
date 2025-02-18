@@ -1,0 +1,12 @@
+/* color picker : https://htmlcolorcodes.com/ */
+h2 {
+    color: purple;
+    background-color: plum;
+}
+button {
+    color: magenta;
+    background-color: cyan;
+}
+p {
+    color: olive;
+}

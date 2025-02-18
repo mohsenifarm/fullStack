@@ -15,6 +15,8 @@ h1 {
     /* text-decoration: line-through;  */
     font-size: 50px;
     font-family: verdana, sans-serif;
+    /* make it uppercase  */
+    text-transform: uppercase;
 
     text-decoration: wavy underline overline #ff3028 1px;
 }

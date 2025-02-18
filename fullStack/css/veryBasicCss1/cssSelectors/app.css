@@ -1,0 +1,64 @@
+/* universal selector select everything  */
+/* * {
+    color: purple;
+} */
+/* element selector  */
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* selector list : select all h1's and h2's  */
+h1,
+h2 {
+    color: #1d3557;
+}
+
+/* id selector  */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+/* class selector  */
+/* select elements with same class name  */
+span {
+    color: #457b9d;
+}
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* descendant selector : in this example select all <a> that are nested inside an <li> */
+/* li a {
+    color: teal;
+} */
+span a {
+    color: #457b9d;
+}
+footer a {
+    color: #e63946;
+}
+
+/* adjacent selector : in this example select only the paragraoh that are immediatly preceded by an <h1> */
+/* h1 + p {
+    /////////////
+} */
+
+h2 + button {
+    font-size: 20px;
+    background-color: magenta;
+}
+/* direct child selector : select only <li>'s that are direct childern of <div>'s element' */
+/* div > li {
+    ...........
+} */
+ footer > a {
+    color: #a8dadc;
+ }

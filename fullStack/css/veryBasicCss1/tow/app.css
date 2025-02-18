@@ -1,7 +1,13 @@
 /* color picker : https://htmlcolorcodes.com/ */
+/* rgb(red,green,blue) */
+/* red : rgb(255,0,0) / green: rgb(0,255,0) blue : rgb(0,0,255) */
+/* hexadecimal colors : red,green,blue / every sopt has 15 choices , from 0-9 nad a-f(a=10,b=11,...,f=16) */
+/* hexa syntaxa : # ff ff ff like # red green blue => eachone(red,green or blue) has two cells(like ff) */
+/* 00 => 0 and ff => 255 (convert to rgb) */
+
 h2 {
-    color: purple;
-    background-color: plum;
+    color: #5fcffc;
+    background-color: rgb(89,151,0);
 }
 button {
     color: magenta;
@@ -9,4 +15,8 @@ button {
 }
 p {
     color: olive;
+}
+body {
+    /* when all digets are same we can write shorthand syntax like blow  */
+    background-color: #000;
 }

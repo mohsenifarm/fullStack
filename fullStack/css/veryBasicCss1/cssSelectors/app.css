@@ -62,3 +62,66 @@ h2 + button {
  footer > a {
     color: #a8dadc;
  }
+ /* attribute selector : select all input elements where the type attribute is set to 'text' */
+ /* input[type="text"] {
+    ........
+ } */
+  input[type="text"] {
+    color: red;
+  }
+  /* section[class="post"] {
+    background-color: plum;
+  } */
+   a[href*="www.google.com"] {
+    text-decoration: none;
+    color: black;
+   }
+   /* =================================== */
+   /* pseuodo classes */
+   /* keyword added to a selector that specifies a special state of the selected element(s) */
+   /* :active 
+   :checked 
+   :first
+   :first-child
+   :hover
+   :not()
+   :nth-of-child()
+   :nth-last-of-type() */
+/* hover : its generally triggered when the user hovers over an element the cursor  */
+.post button:hover {
+    background-color: #e63946;
+}
+a:hover {
+    text-decoration: wavy overline;
+}
+/* :active : activation typically starts when the user preesses down the primary mouthe button  */
+/* body:active {
+    background-color: blue;
+} */
+
+.post button:active {
+    background-color: aquamarine;
+}
+/* :nth-of-type(3) : if i have 5 post just target the 3rd one   */
+/* :nth-of-type(3n) : if i have 5 post just target the every 3rd one   */
+.post:nth-of-type(2) {
+    background-color:bisque;
+}
+/* ***** Psuedo Elements (not class elements) */
+/* ::after
+::before
+::first-letter
+::first-line::selection
+::selection */
+/* keyword added to a selector that lets you style a particular part of selected element(S) */
+
+h2::first-letter {
+    font-size: 40px;
+}
+a[href*="contact"]::before {
+    content: '🔗';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}

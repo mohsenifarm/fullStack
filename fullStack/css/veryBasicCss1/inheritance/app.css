@@ -1,0 +1,7 @@
+body {
+    color: purple;
+}
+section {
+    color: blue;
+}
+/* if i give the purple text color to the body all the content of body inherit this color from body  */

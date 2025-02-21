@@ -125,3 +125,19 @@ a[href*="contact"]::before {
     height: 15px;
     margin-right: 5px;
 }
+/* whats cascade css means?the order your styles are declared in and linked to matters  */
+/* emaple :  */
+/* h1 {
+    color: red;
+}
+h1 {
+    color: purple;
+} */
+ /* purple wins because whatever i change in one element the last same change gonna be approve */
+/* ======== */
+ /* specificity : ehat happend when confilicting styles target the same element ?  */
+/* specificity highest to lowest inline > ID > CLASS > ELEMENT  */
+/* !important : force browse this property and value has priority  */
+/* h1 {
+    color: blue !important;
+} */

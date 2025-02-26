@@ -1,0 +1,33 @@
+/* h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline;
+}
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block;
+} */
+ span {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    width: 500px;
+    padding: 100px;
+    margin: 50px;
+ }
+ h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    height: 200px;
+    width: 500px;
+    padding: 100px;
+    margin: 50px;
+ }
+ div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 50px;
+ }

@@ -1,0 +1,46 @@
+section {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: #e5989b;
+    width: 70%;
+    height: 20%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+/* em : if set 1em mean it's gonna be same size of parent element  */
+/* em : if set 2em mean it's gonna be twice th fontsize of parent element  */
+h2 {
+    font-size: 2em;
+    /* (parent is 30px means 1em is 30px) */
+
+    margin: 1em; 
+/* article is the parent of h2 when i set 30px fontsize to article and give the value of 2em to h2 that means my h2 fontsize gonna be 60px  */
+}
+article {
+    font-size: 30px;
+}
+p {
+    font-size: 0.8em;
+}
+h3 {
+    font-size: 1.5em;
+}
+/* for padding or margin when set fontsize 1em its gonna be 1em of target element font size  */
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+ul {
+    font-size: 1.5em;
+}
+/* rem : rems come from root font size in if i set rems in nestet nefer conflict to getting shorter and shorter font size or bigger and bigger  */

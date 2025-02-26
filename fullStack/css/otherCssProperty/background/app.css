@@ -1,0 +1,14 @@
+section {
+    font-family: 'Raleway';
+    width: 80%;
+    height: 800px;
+    /* background-color: purple; */
+    background-image: url('./img/shopping.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 70px;
+    color: black;
+}

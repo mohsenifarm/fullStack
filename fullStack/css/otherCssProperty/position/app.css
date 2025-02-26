@@ -1,0 +1,44 @@
+/* position determaine how an element position in document  */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+#middle {
+    background-color: #81b29a;
+}
+#static #middle {
+    /* static is default for every elements  */
+    position: static;
+    /* nothing changes because its static  */
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+/* The element is positioned relative to its closest positioned ancestor */
+#absolute {
+    position: relative;
+}
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+#sticky {
+    position: sticky;
+    top: 10px;
+    
+}
